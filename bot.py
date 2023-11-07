@@ -4,7 +4,7 @@ import telebot
 import re
 import requests
 
-API_TOKEN = Config.TG_BOT_TOKEN
+API_TOKEN = '6943535165:AAEPery-VNC5Lsk0atc2cBwNQv2UMnmeDRk'
 bot = telebot.TeleBot(API_TOKEN)
 
 admin = 6509622797
