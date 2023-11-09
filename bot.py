@@ -4,10 +4,10 @@ import telebot
 import re
 import requests
 
-API_TOKEN = '6943535165:AAEPery-VNC5Lsk0atc2cBwNQv2UMnmeDRk'
+API_TOKEN = '6577478116:AAFVFafxs2Dt_Lp78GQoLhU48nsPuqw8aKk'
 bot = Config.TG_BOT_TOKEN 
 
-admin = 6509622797
+admin = 1831414453
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -32,7 +32,7 @@ def send_views(message):
 @bot.message_handler(func=lambda message: not re.search(r't\.me', message.text))
 def invalid_link(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, "يرجى إرسال الرابط بشكل صحيح!\n\nمثال:\n[https://t.me/UI_XB/3560]",)
+    bot.send_message(chat_id, "يرجى إرسال الرابط بشكل صحيح!\n\nمثال:\n[https://t.me/EEGEZ/126]",)
 
 def send_request(link):
     response = requests.get(f"https://smm-speed.com/api/v2?action=add&service=2666&link={link}&quantity=1000&key=1ccfd5366337d76a4c56df9c60203358")
